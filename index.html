@@ -14,6 +14,7 @@
       width: 100%;
       background-color: #c8e0d3 !important;
       border: 2px solid #73b390 !important;
+      padding: 0;
     }
 
     .btn-menu img {
@@ -39,7 +40,7 @@
 <div class="p-3">
   <!--   <h3>วิธีทำ</h3> -->
   <div class="container-fluid">
-    <div class="row row-cols-4">
+    <div class="row row-cols-5">
       <!-- ชาไทย/ชาเขียว/กาแฟโบราณ -->
       <div class="col mb-2">
         <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#tea">
@@ -107,15 +108,15 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <h2 class="accordion-header" id="panelsStayOpen-heading2">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne">
                         <b>เย็น (แก้ว 22 oz.)</b>
                       </button>
                     </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                      aria-labelledby="panelsStayOpen-headingOne">
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-heading2">
                       <div class="accordion-body">
                         <div class="text-center mb-3">
                           <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png" class=""
@@ -218,6 +219,7 @@
         </div>
       </div>
       <!-- ----------------------- -->
+
       <!-- โอเลี้ยง -->
       <div class="col mb-2">
         <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#oliang">
@@ -279,7 +281,7 @@
                     </div>
                   </div>
                   <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <h2 class="accordion-header" id="panelsStayOpen-heading2">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                         aria-controls="panelsStayOpen-collapseOne">
@@ -287,7 +289,7 @@
                       </button>
                     </h2>
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                      aria-labelledby="panelsStayOpen-headingOne">
+                      aria-labelledby="panelsStayOpen-heading2">
                       <div class="accordion-body">
                         <div class="text-center mb-3">
                           <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/oliang.jpg" class=""
@@ -372,26 +374,222 @@
         </div>
       </div>
       <!-- ----------------------- -->
+
+
+      <!-- ชามะนาว/ชาเขียวมะนาว -->
       <div class="col mb-2">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#soda">
+        <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#tea">
+          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png" alt="...">
+          <br />
+          <p>
+            ชามะนาว/ชาเขียวมะนาว
+          </p>
+        </button>
+        <div class="modal fade" id="tea" tabindex="-1" aria-labelledby="teaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="tea">ชามะนาว/ชาเขียวมะนาว</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <b>เย็น (แก้ว 16 oz.)</b>
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                      aria-labelledby="panelsStayOpen-headingOne">
+                      <div class="accordion-body">
+                        <div class="text-center mb-3">
+                          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png" class=""
+                            alt="..." height="150">
+                        </div>
+                        <table class="table text-center table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
+                              <th scope="col">ไม่หวานเลย</th>
+                              <th scope="col">เพิ่มหวาน</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">เบสชา</th>
+                              <td class="bg__primary font__primary">60 ml.</td>
+                              <td>60 ml.</td>
+                              <td>60 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเปล่า</th>
+                              <td class="bg__primary font__primary">140 ml.</td>
+                              <td>140 ml.</td>
+                              <td>140 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเชื่อม/น้ำผึ้ง</th>
+                              <td class="bg__primary font__primary">20 ml.</td>
+                              <td>-</td>
+                              <td>25 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำมะนาว</th>
+                              <td class="bg__primary font__primary">20 ml.</td>
+                              <td>20 ml.</td>
+                              <td>20 ml.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-heading2">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <b>เย็น (แก้ว 22 oz.)</b>
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-heading2">
+                      <div class="accordion-body">
+                        <div class="text-center mb-3">
+                          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png" class=""
+                            alt="..." height="150">
+                        </div>
+                        <table class="table text-center table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
+                              <th scope="col">ไม่หวานเลย</th>
+                              <th scope="col">เพิ่มหวาน</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">เบสชา</th>
+                              <td class="bg__primary font__primary">70 ml.</td>
+                              <td>70 ml.</td>
+                              <td>70 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเปล่า</th>
+                              <td class="bg__primary font__primary">160 ml.</td>
+                              <td>160 ml.</td>
+                              <td>160 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเชื่อม/น้ำผึ้ง</th>
+                              <td class="bg__primary font__primary">30 ml.</td>
+                              <td>-</td>
+                              <td>35 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำมะนาว</th>
+                              <td class="bg__primary font__primary">30 ml.</td>
+                              <td>30 ml.</td>
+                              <td>30 ml.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <b>ปั่น (แก้ว 22 oz.)</b>
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingTwo">
+                      <div class="accordion-body">
+                        <div class="text-center mb-3">
+                          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png" class=""
+                            alt="..." height="150">
+                        </div>
+                        <table class="table text-center table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
+                              <th scope="col">ไม่หวานเลย</th>
+                              <th scope="col">เพิ่มหวาน</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">เบสชา</th>
+                              <td class="bg__primary font__primary">70 ml.</td>
+                              <td>70 ml.</td>
+                              <td>70 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเปล่า</th>
+                              <td class="bg__primary font__primary">160 ml.</td>
+                              <td>160 ml.</td>
+                              <td>160 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเชื่อม/น้ำผึ้ง</th>
+                              <td class="bg__primary font__primary">30 ml.</td>
+                              <td>-</td>
+                              <td>35 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">เพิ่มน้ำเชื่อม</th>
+                              <td class="bg__primary font__primary">20 ml.</td>
+                              <td>-</td>
+                              <td>25 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำมะนาว</th>
+                              <td class="bg__primary font__primary">30 ml.</td>
+                              <td>30 ml.</td>
+                              <td>30 ml.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------- -->
+
+      <!-- อิตาเลี่ยนโซดา -->
+      <div class="col mb-2">
+        <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#oliang">
           <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/soda.png" alt="...">
-          <br>
-          <p>อิตาเลี่ยนโซดา</p>
+          <br />
+          <p>
+            อิตาเลี่ยนโซดา
+          </p>
         </button>
-        <!-- Modal -->
-        <div class="modal fade" id="soda" tabindex="-1" aria-labelledby="sodaLabel" aria-hidden="true">
-          <div class="modal-dialog">
+        <div class="modal fade" id="oliang" tabindex="-1" aria-labelledby="oliangLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">อิตาเลี่ยนโซดา</h5>
+                <h5 class="modal-title" id="oliangLabel">อิตาเลี่ยนโซดา</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <div class="text-center mb-3">
-                  <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/soda.png" class="" alt="..."
-                    height="150">
-                </div>
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -404,8 +602,88 @@
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                       aria-labelledby="panelsStayOpen-headingOne">
                       <div class="accordion-body">
-                        <p>ไซรัป 30 ml.</p>
-                        <p>โซดา 150 ml.</p>
+                        <div class="text-center mb-3">
+                          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/soda.png" class=""
+                            alt="..." height="150">
+                        </div>
+                        <table class="table text-center table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
+                              <th scope="col">ไม่หวานเลย</th>
+                              <th scope="col">เพิ่มหวาน</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">ไซรัป</th>
+                              <td class="bg__primary font__primary">40 ml.</td>
+                              <td>-</td>
+                              <td>40 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเชื่อม</th>
+                              <td class="bg__primary font__primary">-</td>
+                              <td>-</td>
+                              <td>10 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">โซดา/น้ำเปล่า</th>
+                              <td class="bg__primary font__primary">150 ml.</td>
+                              <td>-</td>
+                              <td>150 ml.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-heading2">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <b>เย็น (แก้ว 22 oz.)</b>
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                      aria-labelledby="panelsStayOpen-heading2">
+                      <div class="accordion-body">
+                        <div class="text-center mb-3">
+                          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/soda.png" class=""
+                            alt="..." height="150">
+                        </div>
+                        <table class="table text-center table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
+                              <th scope="col">ไม่หวานเลย</th>
+                              <th scope="col">เพิ่มหวาน</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">ไซรัป</th>
+                              <td class="bg__primary font__primary">50 ml.</td>
+                              <td>-</td>
+                              <td>50 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเชื่อม</th>
+                              <td class="bg__primary font__primary">-</td>
+                              <td>-</td>
+                              <td>10 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">โซดา/น้ำเปล่า</th>
+                              <td class="bg__primary font__primary">170 ml.</td>
+                              <td>-</td>
+                              <td>170 ml.</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -420,8 +698,40 @@
                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                       aria-labelledby="panelsStayOpen-headingTwo">
                       <div class="accordion-body">
-                        <p>ไซรัป 40 ml.</p>
-                        <p>โซดา 170 ml.</p>
+                        <div class="text-center mb-3">
+                          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/soda.png" class=""
+                            alt="..." height="150">
+                        </div>
+                        <table class="table text-center table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
+                              <th scope="col">ไม่หวานเลย</th>
+                              <th scope="col">เพิ่มหวาน</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">ไซรัป</th>
+                              <td class="bg__primary font__primary">50 ml.</td>
+                              <td>-</td>
+                              <td>50 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">น้ำเชื่อม</th>
+                              <td class="bg__primary font__primary">20 ml.</td>
+                              <td>-</td>
+                              <td>30 ml.</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">โซดา/น้ำเปล่า</th>
+                              <td class="bg__primary font__primary">170 ml.</td>
+                              <td>-</td>
+                              <td>170 ml.</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
@@ -434,142 +744,7 @@
           </div>
         </div>
       </div>
-      <div class="col mb-2">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#lemontea">
-          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/lemontea.png" alt="...">
-          <br />
-          <p>
-            ชามะนาว
-          </p>
-        </button>
-        <!-- Modal -->
-        <div class="modal fade" id="lemontea" tabindex="-1" aria-labelledby="lemonteaLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">ชามะนาว</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="text-center mb-3">
-                  <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/lemontea.png" class=""
-                    alt="..." height="150">
-                </div>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        <b>เย็น (แก้ว 16 oz.)</b>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                      aria-labelledby="panelsStayOpen-headingOne">
-                      <div class="accordion-body">
-                        <p>เบสชาไทย 50 ml.</p>
-                        <p>ชาไทย 100 ml.</p>
-                        <p>น้ำเชื่อม 20 ml.</p>
-                        <p>น้ำมะนาว 10 ml.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        <b>ปั่น (แก้ว 22 oz.)</b>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                      aria-labelledby="panelsStayOpen-headingTwo">
-                      <div class="accordion-body">
-                        <p>เบสชาไทย 50 ml.</p>
-                        <p>น้ำเปล่า 100 ml.</p>
-                        <p>น้ำเชื่อม 20 ml.</p>
-                        <p>น้ำมะนาว 10 ml.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col mb-2">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#lemontea">
-          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/lemontea.png" alt="...">
-          <br />
-          <p>
-            ชามะนาว
-          </p>
-        </button>
-        <!-- Modal -->
-        <div class="modal fade" id="lemontea" tabindex="-1" aria-labelledby="lemonteaLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">ชามะนาว</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="text-center mb-3">
-                  <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/lemontea.png" class=""
-                    alt="..." height="150">
-                </div>
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        <b>เย็น (แก้ว 16 oz.)</b>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                      aria-labelledby="panelsStayOpen-headingOne">
-                      <div class="accordion-body">
-                        <p>เบสชาไทย 50 ml.</p>
-                        <p>ชาไทย 100 ml.</p>
-                        <p>น้ำเชื่อม 20 ml.</p>
-                        <p>น้ำมะนาว 10 ml.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        <b>ปั่น (แก้ว 22 oz.)</b>
-                      </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                      aria-labelledby="panelsStayOpen-headingTwo">
-                      <div class="accordion-body">
-                        <p>เบสชาไทย 50 ml.</p>
-                        <p>น้ำเปล่า 100 ml.</p>
-                        <p>น้ำเชื่อม 20 ml.</p>
-                        <p>น้ำมะนาว 10 ml.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
-              </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- ----------------------- -->
     </div>
   </div>
 </div>
