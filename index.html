@@ -24,6 +24,12 @@
       color: #000 !important;
       font-size: 20px !important;
     }
+    .bg__primary {
+      background-color: #c8e0d3;
+    }
+    .font__primary {
+      font-weight: bold;
+    }
   </style>
 </head>
 <div class="p-3">
@@ -42,7 +48,7 @@
         </button>
         <!-- Modal -->
         <div class="modal fade" id="tea" tabindex="-1" aria-labelledby="teaLabel" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">ชาไทย/ชาเขียว</h5>
@@ -65,11 +71,11 @@
                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                       aria-labelledby="panelsStayOpen-headingOne">
                       <div class="accordion-body">
-                        <table class="table text-center">
+                        <table class="table text-center table-bordered">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
+      <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
       <th scope="col">ไม่หวานเลย</th>
       <th scope="col">เพิ่มหวาน</th>
     </tr>
@@ -77,17 +83,19 @@
   <tbody>
     <tr>
       <th scope="row">เบสชา</th>
-      <td colspan="3">150 ml.</td>
+      <td class="bg__primary font__primary">150 ml.</td>
+      <td>150 ml.</td>
+      <td>150 ml.</td>
     </tr>
     <tr>
       <th scope="row">นมข้นหวาน</th>
-      <td>30 ml.</td>
+      <td class="bg__primary font__primary">30 ml.</td>
       <td>0 ml.</td>
       <td>40 ml.</td>
     </tr>
     <tr>
       <th scope="row">นมข้นจืด</th>
-      <td>30 ml.</td>
+      <td class="bg__primary font__primary">30 ml.</td>
       <td>60 ml.</td>
       <td>20 ml.</td>
     </tr>
