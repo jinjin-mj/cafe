@@ -772,6 +772,7 @@
         let obj = [
             {
                 category: "tea",
+                category_name: "ชา/กาแฟโบราณ",
                 menu: [
                     {
                         key: "thaitea",
@@ -832,6 +833,7 @@
             },
             {
                 category: "milk",
+                category_name: "นมสด",
                 menu: [
                     {
                         key: "oreo",
@@ -878,7 +880,7 @@
 
         let datahtml = "";
         for (let i = 0; i < obj.length; i++) {
-            datahtml += `<div class="row row-cols-4" id="row-${obj[i].category}">`;
+            datahtml += `<div><h4>${obj[i].category_name}</h4></div><div class="row row-cols-4" id="row-${obj[i].category}">`;
             for (let j = 0; j < obj[i].menu.length; j++) {
                 let menu = obj[i].menu[j];
                 datahtml += `<div class="col mb-2">
