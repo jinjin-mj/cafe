@@ -785,7 +785,7 @@
 
     let datahtml = "";
     for(let i = 0; i < obj.length; i++) {
-      datahtml += '<div class="col mb-2">
+      datahtml += `<div class="col mb-2">
         <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#tea">
           <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png" alt="...">
           <br />
@@ -960,7 +960,7 @@
             </div>
           </div>
         </div>
-      </div>';
+      </div>`;
     }
     console.log(datahtml)
     $(".data").append(datahtml);
