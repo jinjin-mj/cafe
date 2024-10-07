@@ -41,8 +41,8 @@
 </head>
 <div class="p-3">
   <!--   <h3>วิธีทำ</h3> -->
-  <div class="container-fluid">
-    <div class="row row-cols-4" id="data">
+  <div class="container-fluid" id="data">
+    <div class="row row-cols-4">
       <!-- ชาไทย/ชาเขียว/กาแฟโบราณ -->
       <div class="col mb-2">
         <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#tea">
@@ -761,7 +761,7 @@
           {
             key: "thaitea",
             name: "ชาไทย",
-            thumbnail: "",
+            thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
             size: [
               {
                 name: "",
@@ -785,19 +785,22 @@
 
     let datahtml = "";
     for(let i = 0; i < obj.length; i++) {
+      datahtml += `<div class="row row-cols-4" id="row-${obj[i].category}">`;
+      for(let j = 0; j < obj[i].menu.length; j++) {
+        let d = obj[i].menu[j];
       datahtml += `<div class="col mb-2">
-        <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#tea">
-          <img src="https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png" alt="...">
+        <button type="button" class="btn btn-menu" data-bs-toggle="modal" data-bs-target="#${d.key}">
+          <img src="${d.thumbnail}" alt="${d.name}">
           <br />
           <p>
-            ชาไทย/ชาเขียว/กาแฟโบราณ
+            ${d.name}
           </p>
         </button>
-        <div class="modal fade" id="tea" tabindex="-1" aria-labelledby="teaLabel" aria-hidden="true">
+        <div class="modal fade" id="${d.key}" tabindex="-1" aria-labelledby="${d.key}Label" aria-hidden="true">
           <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="tea">ชาไทย/ชาเขียว/กาแฟโบราณ</h5>
+                <h5 class="modal-title">${d.name}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -961,6 +964,8 @@
           </div>
         </div>
       </div>`;
+      }
+      datahtml += `</div>`;
     }
     console.log(datahtml)
     $("#data").append(datahtml);
