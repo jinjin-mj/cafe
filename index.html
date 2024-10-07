@@ -1087,6 +1087,7 @@
                         size: [
                             {
                                 name: "ปั่น (แก้ว 22 oz.)",
+                                price: "45",
                                 image: "",
                                 data: [
                                     {
@@ -1160,8 +1161,11 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                           data-bs-target="#panels-collapse-${menu.key}-${q}" aria-expanded="true"
                           aria-controls="panels-collapse-${menu.key}-${q}">
-                          <b>${size.name}</b>
-                        </button>
+                          <b>${size.name}`;
+                    if (size.price && size.price !== "") {
+                        datahtml += ` : ${size.price}.-`;
+                    }
+                    datahtml += `</b></button>
                       </h2>
                       <div id="panels-collapse-${menu.key}-${q}" class="accordion-collapse collapse ${q === 0 ? "show" : ""}"
                         aria-labelledby="panels-heading-${menu.key}-${q}">
