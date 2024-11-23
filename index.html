@@ -1,4 +1,5 @@
 <head>
+    <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -8,13 +9,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <style>
-        body {
-            background-color: #252424 !important;
-        }
-
         .btn-menu {
             width: 100%;
-            background-color: #c8e0d3 !important;
+            background-color: #f0fbf5 !important;
             border: 2px solid #73b390 !important;
             padding: 0;
         }
@@ -54,270 +51,144 @@
                 menu: [
                     {
                         key: "thaitea",
-                        name: "ชาไทย",
-                        thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
+                        name: "ชาไทย/ชาเขียว/ชาไต้หวัน",
+                        thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/greentea.jpg",
                         size: [
                             {
-                                name: "เย็น (แก้ว 16 oz.)",
-                                price: "35",
-                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
+                                name: "เย็น",
+                                price: "40",
+                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/greentea.jpg",
                                 data: [
                                     {
-                                        ingredients: "เบสชาไทย",
-                                        normal: "4.5 oz.",
-                                        nosweet: "4.5 oz.",
-                                        addsweet: "4.5 oz.",
+                                        ingredients: "เบสชา",
+                                        normal: "75 ml.",
+                                        lowsweet: "75 ml.",
+                                        nosweet: "75 ml.",
+                                        addsweet: "75 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นหวาน",
                                         normal: "30 ml.",
+                                        lowsweet: "20 ml.",
                                         nosweet: "-",
-                                        addsweet: "40 ml.",
+                                        addsweet: "35 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นจืด",
                                         normal: "30 ml.",
+                                        lowsweet: "30 ml.",
                                         nosweet: "60 ml.",
-                                        addsweet: "20 ml.",
+                                        addsweet: "25 ml.",
                                     }
                                 ],
                                 howto: []
-                            },
-                            {
-                                name: "เย็น (แก้ว 22 oz.)",
-                                price: "40",
-                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
+                            },{
+                                name: "ปั่น",
+                                price: "45",
+                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea-f.jpg",
                                 data: [
                                     {
-                                        ingredients: "เบสชาไทย",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
+                                        ingredients: "เบสชา",
+                                        normal: "75 ml.",
+                                        lowsweet: "75 ml.",
+                                        nosweet: "75 ml.",
+                                        addsweet: "75 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นหวาน",
-                                        normal: "40 ml.",
+                                        normal: "30 ml.",
+                                        lowsweet: "20 ml.",
                                         nosweet: "-",
-                                        addsweet: "50 ml.",
+                                        addsweet: "35 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นจืด",
-                                        normal: "40 ml.",
-                                        nosweet: "80 ml.",
-                                        addsweet: "30 ml.",
-                                    }
-                                ],
-                                howto: []
-                            },
-                            {
-                                name: "ปั่น (แก้ว 22 oz.)",
-                                price: "40",
-                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
-                                data: [
-                                    {
-                                        ingredients: "เบสชาไทย",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นหวาน",
-                                        normal: "40 ml.",
+                                        normal: "30 ml.",
+                                        lowsweet: "20 ml.",
                                         nosweet: "-",
-                                        addsweet: "50 ml.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นจืด",
-                                        normal: "40 ml.",
-                                        nosweet: "80 ml.",
-                                        addsweet: "30 ml.",
+                                        addsweet: "35 ml.",
                                     },
                                     {
                                         ingredients: "น้ำเชื่อม",
                                         normal: "20 ml.",
+                                        lowsweet: "10 ml.",
                                         nosweet: "-",
-                                        addsweet: "30 ml.",
+                                        addsweet: "25 ml.",
                                     }
                                 ],
                                 howto: []
                             }
                         ]
-                    },
-                    {
-                        key: "greentea",
-                        name: "ชาเขียว",
-                        thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
-                        size: [
-                            {
-                                name: "เย็น (แก้ว 16 oz.)",
-                                price: "35",
-                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
-                                data: [
-                                    {
-                                        ingredients: "เบสชาเขียว",
-                                        normal: "4.5 oz.",
-                                        nosweet: "4.5 oz.",
-                                        addsweet: "4.5 oz.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นหวาน",
-                                        normal: "30 ml.",
-                                        nosweet: "-",
-                                        addsweet: "40 ml.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นจืด",
-                                        normal: "30 ml.",
-                                        nosweet: "60 ml.",
-                                        addsweet: "20 ml.",
-                                    }
-                                ],
-                                howto: []
-                            },
-                            {
-                                name: "เย็น (แก้ว 22 oz.)",
-                                price: "40",
-                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
-                                data: [
-                                    {
-                                        ingredients: "เบสชาเขียว",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นหวาน",
-                                        normal: "40 ml.",
-                                        nosweet: "-",
-                                        addsweet: "50 ml.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นจืด",
-                                        normal: "40 ml.",
-                                        nosweet: "80 ml.",
-                                        addsweet: "30 ml.",
-                                    }
-                                ],
-                                howto: []
-                            },
-                            {
-                                name: "ปั่น (แก้ว 22 oz.)",
-                                price: "40",
-                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/tea.png",
-                                data: [
-                                    {
-                                        ingredients: "เบสชาเขียว",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นหวาน",
-                                        normal: "40 ml.",
-                                        nosweet: "-",
-                                        addsweet: "50 ml.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นจืด",
-                                        normal: "40 ml.",
-                                        nosweet: "80 ml.",
-                                        addsweet: "30 ml.",
-                                    },
-                                    {
-                                        ingredients: "น้ำเชื่อม",
-                                        normal: "20 ml.",
-                                        nosweet: "-",
-                                        addsweet: "30 ml.",
-                                    }
-                                ],
-                                howto: []
-                            }
-                        ]
-                    },
-                    {
+                    },{
                         key: "coffee",
                         name: "กาแฟโบราณ",
-                        thumbnail: "",
+                        thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93.jpg",
                         size: [
                             {
-                                name: "เย็น (แก้ว 16 oz.)",
-                                price: "35",
-                                image: "",
+                                name: "เย็น",
+                                price: "40",
+                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%93.jpg",
                                 data: [
                                     {
                                         ingredients: "เบสกาแฟ",
-                                        normal: "4.5 oz.",
-                                        nosweet: "4.5 oz.",
-                                        addsweet: "4.5 oz.",
+                                        normal: "5 oz.",
+                                        lowsweet: "5 oz.",
+                                        nosweet: "5 oz.",
+                                        addsweet: "5 oz.",
                                     },
                                     {
                                         ingredients: "นมข้นหวาน",
                                         normal: "30 ml.",
+                                        lowsweet: "25 ml.",
                                         nosweet: "-",
                                         addsweet: "40 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นจืด",
                                         normal: "30 ml.",
+                                        lowsweet: "35 ml.",
                                         nosweet: "60 ml.",
-                                        addsweet: "20 ml.",
+                                        addsweet: "25 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นจืด (ราดข้างบน)",
-                                        normal: "20 ml.",
-                                        nosweet: "20 ml.",
-                                        addsweet: "20 ml.",
-                                    }
-                                ],
-                                howto: []
-                            },
-                            {
-                                name: "เย็น (แก้ว 22 oz.)",
-                                price: "40",
-                                image: "",
-                                data: [
-                                    {
-                                        ingredients: "เบสกาแฟ",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นหวาน",
-                                        normal: "40 ml.",
-                                        nosweet: "-",
-                                        addsweet: "50 ml.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นจืด",
-                                        normal: "40 ml.",
-                                        nosweet: "80 ml.",
+                                        normal: "30 ml.",
+                                        nosweet: "30 ml.",
                                         addsweet: "30 ml.",
                                     }
                                 ],
                                 howto: []
                             },
                             {
-                                name: "ปั่น (แก้ว 22 oz.)",
-                                price: "40",
+                                name: "ปั่น",
+                                price: "45",
                                 image: "",
                                 data: [
                                     {
                                         ingredients: "เบสกาแฟ",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
+                                        normal: "5 oz.",
+                                        lowsweet: "5 oz.",
+                                        nosweet: "5 oz.",
+                                        addsweet: "5 oz.",
                                     },
                                     {
                                         ingredients: "นมข้นหวาน",
-                                        normal: "40 ml.",
+                                        normal: "30 ml.",
+                                        lowsweet: "25 ml.",
                                         nosweet: "-",
-                                        addsweet: "50 ml.",
+                                        addsweet: "40 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นจืด",
-                                        normal: "40 ml.",
-                                        nosweet: "80 ml.",
+                                        normal: "30 ml.",
+                                        lowsweet: "35 ml.",
+                                        nosweet: "60 ml.",
+                                        addsweet: "25 ml.",
+                                    },
+                                    {
+                                        ingredients: "นมข้นจืด (ราดข้างบน)",
+                                        normal: "30 ml.",
+                                        nosweet: "30 ml.",
                                         addsweet: "30 ml.",
                                     },
                                     {
@@ -334,22 +205,21 @@
                     {
                         key: "oliang",
                         name: "โอเลี้ยง",
-                        thumbnail: "",
+                        thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/oliang.jpg",
                         size: [
                             {
-                                name: "เย็น (แก้ว 16 oz.)",
-                                price: "35",
-                                image: "",
+                                name: "เย็น",
+                                price: "40",
+                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/oliang.jpg",
                                 data: [
                                     {
                                         ingredients: "เบสกาแฟ",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
+                                        normal: "6 oz."
                                     },
                                     {
                                         ingredients: "น้ำเชื่อม",
                                         normal: "20 ml.",
+                                        lowsweet: "15 ml.",
                                         nosweet: "-",
                                         addsweet: "25 ml.",
                                     }
@@ -357,21 +227,20 @@
                                 howto: []
                             },
                             {
-                                name: "เย็น (แก้ว 22 oz.)",
-                                price: "40",
+                                name: "ปั่น",
+                                price: "45",
                                 image: "",
                                 data: [
                                     {
                                         ingredients: "เบสกาแฟ",
-                                        normal: "7 oz.",
-                                        nosweet: "7 oz.",
-                                        addsweet: "7 oz.",
+                                        normal: "6 oz."
                                     },
                                     {
                                         ingredients: "น้ำเชื่อม",
-                                        normal: "25 ml.",
+                                        normal: "40 ml.",
+                                        lowsweet: "35 ml.",
                                         nosweet: "-",
-                                        addsweet: "30 ml.",
+                                        addsweet: "45 ml.",
                                     }
                                 ],
                                 howto: []
@@ -381,56 +250,30 @@
                     {
                         key: "oliang-2",
                         name: "โอเลี้ยงยกล้อ",
-                        thumbnail: "",
+                        thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/oliang-2.jpg",
                         size: [
                             {
-                                name: "เย็น (แก้ว 16 oz.)",
-                                price: "35",
-                                image: "",
+                                name: "เย็น",
+                                price: "40",
+                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/oliang-2.jpg",
                                 data: [
                                     {
                                         ingredients: "เบสกาแฟ",
-                                        normal: "5 oz.",
-                                        nosweet: "5 oz.",
-                                        addsweet: "5 oz.",
+                                        normal: "5 oz."
                                     },
                                     {
                                         ingredients: "น้ำเชื่อม",
                                         normal: "25 ml.",
+                                        lowsweet: "20 ml.",
                                         nosweet: "-",
                                         addsweet: "30 ml.",
                                     },
                                     {
                                         ingredients: "นมข้นจืด (ราดข้างบน)",
                                         normal: "50 ml.",
+                                        lowsweet: "50 ml.",
                                         nosweet: "50 ml.",
                                         addsweet: "50 ml.",
-                                    }
-                                ],
-                                howto: []
-                            },
-                            {
-                                name: "เย็น (แก้ว 22 oz.)",
-                                price: "40",
-                                image: "",
-                                data: [
-                                    {
-                                        ingredients: "เบสกาแฟ",
-                                        normal: "6 oz.",
-                                        nosweet: "6 oz.",
-                                        addsweet: "6 oz.",
-                                    },
-                                    {
-                                        ingredients: "น้ำเชื่อม",
-                                        normal: "30 ml.",
-                                        nosweet: "-",
-                                        addsweet: "35 ml.",
-                                    },
-                                    {
-                                        ingredients: "นมข้นจืด (ราดข้างบน)",
-                                        normal: "30 ml.",
-                                        nosweet: "30 ml.",
-                                        addsweet: "30 ml.",
                                     }
                                 ],
                                 howto: []
@@ -440,12 +283,12 @@
                     {
                         key: "oliang-3",
                         name: "โอเลี้ยงจั้มบ๊ะ",
-                        thumbnail: "",
+                        thumbnail: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/oliang-3.jpg",
                         size: [
                             {
-                                name: "เย็น (แก้ว 16 oz.)",
-                                price: "35",
-                                image: "",
+                                name: "เย็น",
+                                price: "40",
+                                image: "https://letjoys.sgp1.cdn.digitaloceanspaces.com/jinjincafe/how/oliang-3.jpg",
                                 data: [
                                     {
                                         ingredients: "เบสกาแฟ",
@@ -456,32 +299,9 @@
                                     {
                                         ingredients: "น้ำแดง",
                                         normal: "30 ml.",
+                                        lowsweet: "25 ml.",
                                         nosweet: "-",
                                         addsweet: "35 ml.",
-                                    }
-                                ],
-                                howto: [
-                                    "1. ใส่น้ำแดงข้างล่างแก้วเสิร์ฟ",
-                                    "2. ใส่น้ำแข็งเต็มแก้ว",
-                                    "2. ราดเบสกาแฟข้างบน",
-                                ]
-                            },
-                            {
-                                name: "เย็น (แก้ว 22 oz.)",
-                                price: "40",
-                                image: "",
-                                data: [
-                                    {
-                                        ingredients: "เบสกาแฟ",
-                                        normal: "7 oz.",
-                                        nosweet: "7 oz.",
-                                        addsweet: "7 oz.",
-                                    },
-                                    {
-                                        ingredients: "น้ำแดง",
-                                        normal: "40 ml.",
-                                        nosweet: "-",
-                                        addsweet: "45 ml.",
                                     }
                                 ],
                                 howto: [
@@ -2676,7 +2496,7 @@
 
         let datahtml = "";
         for (let i = 0; i < obj.length; i++) {
-            datahtml += `<div class="mt-3" style="color: #fff;"><h4>${obj[i].category_name}</h4></div><div class="row row-cols-4" id="row-${obj[i].category}">`;
+            datahtml += `<div class="mt-3" style="color: #000;"><h4>${obj[i].category_name}</h4></div><div class="row row-cols-4" id="row-${obj[i].category}">`;
             for (let j = 0; j < obj[i].menu.length; j++) {
                 let menu = obj[i].menu[j];
                 console.log('menu', menu);
@@ -2685,6 +2505,9 @@
             <p>
               ${menu.name}
             </p>
+            <div class="mb-1">
+                <img src="${menu.thumbnail}" alt="..." height="150" /> 
+            </div>
           </button>
           <div class="modal fade" id="${menu.key}" tabindex="-1" aria-labelledby="${menu.key}Label" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
@@ -2714,7 +2537,7 @@
                     if (size.image !== "") {
                         datahtml += `<div class="text-center mb-3">
                             <img src="${size.image}" 
-                              alt="..." height="150">
+                              alt="..." height="250" />
                           </div>`;
                     }
 
@@ -2722,21 +2545,30 @@
                             <thead>
                               <tr>
                                 <th scope="col">#</th>
-                                <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 50%/หวานน้อย</th>
-                                <th scope="col">ไม่หวานเลย</th>
-                                <th scope="col">เพิ่มหวาน</th>
+                                <th class="bg__primary font__primary" scope="col">ปกติ/หวาน 75%</th>
+                                <th scope="col">หวานน้อย/หวาน 25%</th>
+                                <th scope="col">ไม่หวานเลย/หวาน 0%</th>
+                                <th scope="col">เพิ่มหวาน/หวาน 100%</th>
                               </tr>
                             </thead>
                             <tbody>`;
 
                     for (let w = 0; w < size.data.length; w++) {
                         let data = size.data[w];
-                        datahtml += `<tr>
+                        if(w === 0) {
+                            datahtml += `<tr>
+                                <th scope="row">${data.ingredients}</th>
+                                <td colspan="4" class="bg__primary font__primary">${data.normal}</td>
+                              </tr>`;
+                        } else {
+                            datahtml += `<tr>
                                 <th scope="row">${data.ingredients}</th>
                                 <td class="bg__primary font__primary">${data.normal}</td>
+                                <td>${data.lowsweet ?? data.normal}</td>
                                 <td>${data.nosweet}</td>
                                 <td>${data.addsweet}</td>
                               </tr>`;
+                        }
                     }
                     datahtml += `</tbody>
                           </table>`;
