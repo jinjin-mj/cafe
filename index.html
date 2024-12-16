@@ -2006,7 +2006,7 @@
 
         let datahtml = "";
         for (let i = 0; i < obj.length; i++) {
-            datahtml += `<div class="mt-3" style="color: #000;"><h4>${obj[i].category_name}</h4></div><div class="row row-cols-3" id="row-${obj[i].category}">`;
+            datahtml += `<div class="mt-3" style="color: #000;"><h4>${obj[i].category_name}</h4></div><div class="row row-cols-2" id="row-${obj[i].category}">`;
             for (let j = 0; j < obj[i].menu.length; j++) {
                 let menu = obj[i].menu[j];
                 console.log('menu', menu);
